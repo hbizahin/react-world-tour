@@ -1,0 +1,20 @@
+.country-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default for large devices */
+    gap: 10px;
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
+    .country-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Devices (Mobile) */
+@media (max-width: 768px) {
+    .country-container {
+        grid-template-columns: 1fr; /* Single column centered */
+        justify-items: center; /* Centers the grid items */
+    }
+}
