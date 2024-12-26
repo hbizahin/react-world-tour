@@ -13,7 +13,6 @@ const Countries = () => {
   }, []);
 
   const handleVisitedCountry = country =>{
-    console.log('add this to your visited country')
     const newVisitedCountries = [...visitedCountries, country];
     setVisitedCountries(newVisitedCountries);
   }
